@@ -1,4 +1,4 @@
-package com.tw.exception;
+package com.wangqi.exception;
 
 public class BingException {
     private final int code;

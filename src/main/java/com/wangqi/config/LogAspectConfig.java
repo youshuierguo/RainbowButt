@@ -1,4 +1,4 @@
-package com.tw.config;
+package com.wangqi.config;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -14,7 +14,7 @@ import java.util.Arrays;
 @Component
 public class LogAspectConfig {
 
-    @Pointcut("execution(* com.tw.controller..*.*(..))")
+    @Pointcut("execution(* com.wangqi.controller..*.*(..))")
     public void webLog(){
     }
 

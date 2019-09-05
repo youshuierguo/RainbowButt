@@ -1,4 +1,4 @@
-package com.tw.vo;
+package com.wangqi.vo;
 
 import lombok.Data;
 
