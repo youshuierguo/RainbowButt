@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangqi.mapper.HelloMapper">
+        <resultMap id="BaseResultMap" type="com.wangqi.vo.Hello">
+        <result column="variable" jdbcType="VARCHAR" property="variable" />
+        <result column="value" jdbcType="VARCHAR" property="value" />
+        <result column="set_time" jdbcType="VARCHAR" property="setTime" />
+        <result column="set_by" jdbcType="VARCHAR" property="setBy" />
+        </resultMap>
+
+        <select id="selectAll" resultMap="BaseResultMap">
+        select variable, value, set_time, set_by
+        from sys_config limit 1,1
+        </select>
+</mapper>

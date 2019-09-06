@@ -1,3 +1,19 @@
 spring:
   profiles:
     active: dev
+  # DATASOURCE
+  datasource:
+    driverClass: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.99.94.215:3306/spring_boot_demo?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:Mapper/*Mapper.xml
+  type-aliases-package: com.wangqi.vo
+
+#showSql
+logging:
+  level:
+    com:
+      wangqi:
+        mapper : debug
