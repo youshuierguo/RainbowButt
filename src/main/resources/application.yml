@@ -16,4 +16,4 @@ logging:
   level:
     com:
       wangqi:
-        mapper : debug
+        mapper : info

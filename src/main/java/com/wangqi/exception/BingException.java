@@ -15,6 +15,7 @@ public class BingException {
         return this.toString();
     }
 
+    @Override
     public String toString() {
         return "系统异常，异常编码：" + this.code;
     }
